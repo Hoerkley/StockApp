@@ -6,8 +6,14 @@ using System.Threading.Tasks;
 
 namespace StockApp.DataAccess.Database
 {
-    internal class CriarBanco
+    public static class CriarBanco
     {
-
+        public static void Executar()
+        {
+            var sql = @"IF NOT EXISTS(SELECT * FROM sys.database WHERE name = 'StockApp')
+                         BEGIN
+                           CREATE DATABASE StockApp
+                         END";
+        }
     }
 }
