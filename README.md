@@ -1,2 +1,2 @@
-# StockApp
-Sistema em Windows Forms com .Net4.8 para aprendizagem de orientação 
+# WinFormsNLayerApp
+Sistema em Windows Forms usando Arquitetura N Camadas em .Net7
